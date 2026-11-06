@@ -1,0 +1,49 @@
+== SISTEM PARKIR KENDARAAN PARKIRKU ==
+
+Kendaraan masuk: Mobil | Plat: B 1234 ABC | Pemilik: Agis | Masuk jam 8 | Jenis: MPV | Kursi: 5
+Kendaraan masuk: Mobil | Plat: B 5678 DEF | Pemilik: Budi | Masuk jam 9 | Jenis: SUV | Kursi: 7
+Kendaraan masuk: Motor | Plat: AD 9012 GH | Pemilik: Citra | Masuk jam 10 | CC: 150 | Transmisi: Matic
+Kendaraan masuk: Motor | Plat: AD 3456 IJ | Pemilik: Dewi | Masuk jam 11 | CC: 110 | Transmisi: Manual
+Kendaraan masuk: Motor | Plat: B 7777 ZZ | Pemilik: Eko | Masuk jam 12 | CC: 150 | Transmisi: Matic
+
+== Daftar kendaraan yang sedang parkir ==
+- Mobil | Plat: B 1234 ABC | Pemilik: Agis | Masuk jam 8 | Jenis: MPV | Kursi: 5
+- Mobil | Plat: B 5678 DEF | Pemilik: Budi | Masuk jam 9 | Jenis: SUV | Kursi: 7
+- Motor | Plat: AD 9012 GH | Pemilik: Citra | Masuk jam 10 | CC: 150 | Transmisi: Matic
+- Motor | Plat: AD 3456 IJ | Pemilik: Dewi | Masuk jam 11 | CC: 110 | Transmisi: Manual
+- Motor | Plat: B 7777 ZZ | Pemilik: Eko | Masuk jam 12 | CC: 150 | Transmisi: Matic
+
+== Demo overloading hitungTotal ==
+Mobil B 1234 ABC, 3 jam (bukan member): Rp15000
+Mobil B 1234 ABC, 3 jam (member): Rp13500
+Motor AD 9012 GH, 2 jam (bukan member): Rp4000
+
+== Demo getter/setter ==
+Pemilik k2 sebelum diubah: Budi
+Pemilik k2 sesudah diubah: Budi Santoso
+Info lengkap k2: Mobil | Plat: B 5678 DEF | Pemilik: Budi Santoso | Masuk jam 9 | Jenis: SUV | Kursi: 7 | Tarif/jam: Rp5000
+
+== Kendaraan keluar ==
+===== TIKET PARKIR =====
+Mobil | Plat: B 1234 ABC | Pemilik: Agis | Masuk jam 8 | Jenis: MPV | Kursi: 5
+Lama parkir : 3 jam
+Tarif/jam   : Rp5000
+Total       : Rp15000
+=========================
+Diskon member 10%.
+Total bayar: Rp13500
+
+===== TIKET PARKIR =====
+Motor | Plat: AD 9012 GH | Pemilik: Citra | Masuk jam 10 | CC: 150 | Transmisi: Matic
+Lama parkir : 2 jam
+Tarif/jam   : Rp2000
+Total       : Rp4000
+=========================
+Total bayar: Rp4000
+
+== Ringkasan ==
+Total pendapatan: Rp17500
+Sisa kendaraan di parkir: 3
+- Mobil | Plat: B 5678 DEF | Pemilik: Budi Santoso | Masuk jam 9 | Jenis: SUV | Kursi: 7
+- Motor | Plat: AD 3456 IJ | Pemilik: Dewi | Masuk jam 11 | CC: 110 | Transmisi: Manual
+- Motor | Plat: B 7777 ZZ | Pemilik: Eko | Masuk jam 12 | CC: 150 | Transmisi: Matic

@@ -1,0 +1,24 @@
+CARA MENJALANKAN PARKIRKU
+=========================
+Program: Sistem Parkir Kendaraan "ParkirKu" (Java, Lab Session 3B PBO)
+File: 6 file .java di folder src/ (interfaces, model, service, main)
+
+Cara 1 - NetBeans (yang dipakai Agis untuk screenshot):
+  1. Buat Java Project baru (Java with Ant > Java Application), nama ParkirKu.
+  2. Salin folder src/ ke project (timpa src bawaan), atau buat package
+     interfaces, model, service, main lalu salin tiap file .java ke package-nya.
+  3. Klik kanan project > Run (atau Shift+F6 pada MainApp.java).
+  4. Output tampil di jendela Output NetBeans.
+
+Cara 2 - Terminal / CMD:
+  cd ParkirKu
+  javac -d out $(find src -name "*.java")   (di Windows: javac -d out src\interfaces\*.java src\model\*.java src\service\*.java src\main\*.java)
+  java -cp out main.MainApp
+
+Hasil yang benar (sudah diverifikasi 2026-11-06):
+  Mobil B 1234 ABC, 3 jam (bukan member): Rp15000
+  Mobil B 1234 ABC, 3 jam (member): Rp13500
+  Motor AD 9012 GH, 2 jam (bukan member): Rp4000
+  Total pendapatan: Rp17500
+  Sisa kendaraan di parkir: 3
+Lihat Hasil_Run.txt untuk output lengkap.
